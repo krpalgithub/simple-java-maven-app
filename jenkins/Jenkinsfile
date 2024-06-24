@@ -6,11 +6,6 @@ pipeline {
                 deleteDir()
             }
         }
-        stage("Clone Repo"){
-            steps {
-                sh "git clone https://github.com/krpalgithub/simple-java-maven-app.git "
-            }
-        }
         stage("Build"){
             steps {
                 directory("simple-java-maven-app") {
